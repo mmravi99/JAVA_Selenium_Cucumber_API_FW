@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Suite">
+
+	<listeners>
+		<listener class-name="csg.TestComponents.Listeners" />
+	</listeners>
+	<test name="Booking Test01" parallel="classes">
+		<classes>
+			<class name="csg.runners.TestRunner01" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="csg.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Booking Test01(failed)">
+    <classes>
+      <class name="csg.runners.TestRunner01">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="tearDownClass"/>
+          <include name="beforeCalss"/>
+        </methods>
+      </class> <!-- csg.runners.TestRunner01 -->
+    </classes>
+  </test> <!-- Booking Test01(failed) -->
+</suite> <!-- Failed suite [Suite] -->
